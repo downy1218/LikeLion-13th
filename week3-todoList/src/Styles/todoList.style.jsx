@@ -14,6 +14,7 @@ export const Title = styled.div`
 font-size:30px;
 margin:0;
 padding-top:30px;
+margin-left:230px;
 color:white;
 `
 export const InputContainer = styled.div`
@@ -47,7 +48,9 @@ cursor:pointer;
 `
 export const TaskContainer = styled.div`
 display:flex;
+flex-direction:column;
 justify-content:center;
+align-items:center;
 gap:20px;
 margin-top:20px;
 `
@@ -63,6 +66,7 @@ align-items:center;
 `
 export const TaskName = styled.input`
 margin-left:20px;
+color:black;
 `
 export const DelBtn = styled.button`
 width:100px;
