@@ -20,7 +20,7 @@ function TaskList({taskName,onDelete,onToggle}){
                         <T.DelBtn onClick={()=>onDelete(task.id)}>del</T.DelBtn>
                     </T.TaskCard>
                 ))
-            ):(<h2>할 일이 없습니다</h2>)}
+            ):(<h2 style={{color:'white'}}>할 일이 없습니다</h2>)}
         </T.TaskContainer>
     )
 }
