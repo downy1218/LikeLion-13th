@@ -10,7 +10,7 @@ function NameSetting(){
         if(newName.trim() !==''){
             console.log('name:',name)
             setName(newName);
-            localStorage.setItem('name',JSON.stringify(name))
+            localStorage.setItem('name',JSON.stringify(newName))
             console.log('localStorage',localStorage);
         }
     }
