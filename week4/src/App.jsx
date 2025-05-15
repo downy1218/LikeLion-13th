@@ -15,7 +15,7 @@ function App() {
           <span style={{ color: "white", fontSize: "1.25rem", fontWeight: 500 }}>
             멋쟁이사자처럼, ‘건강관리 서비스 개발’ 해커톤 성료
           </span>
-        </Card><div className=""></div>
+        </Card>
       </Cards>
     </Container>
   );
