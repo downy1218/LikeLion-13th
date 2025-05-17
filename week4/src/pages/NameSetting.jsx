@@ -6,13 +6,11 @@ function NameSetting(){
     const [name,setName] = useState('');
     const navigate = useNavigate();
     const handleChange = (e)=>{
-        const newName = e.target.value;
-        if(newName.trim() !==''){
-            console.log('name:',name)
-            setName(newName);
-            localStorage.setItem('name',JSON.stringify(newName))
-            console.log('localStorage',localStorage);
-        }
+        // const newName = e.target.value;
+        const newName = e.target.value.trim(); 
+        setName(newName);
+        localStorage.setItem('name',JSON.stringify(setName))
+        console.log('localStorage',localStorage);
     }
 
     return(
