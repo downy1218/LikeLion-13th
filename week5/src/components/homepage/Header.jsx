@@ -1,20 +1,28 @@
 import styled from 'styled-components';
 import IDT from '../../assets/images/IDT.svg';
+import { Link } from "react-router";
+
 
 function Header(){
     return(
         <Container>
             <Img src={IDT}/>
             <Category>
-                <p>About</p>
-                <p>Project</p>
-                <p>Diary</p>
-                <p>QnA</p>
+                <Page to='/'>About</Page>
+                <Page to='/project'>Project</Page>
+                <Page to='/diary'>Diary</Page>
+                <Page>QnA</Page>
             </Category>
             
         </Container>
     )
 }
+
+const Page = styled(Link)`
+    font-size:18px;
+    color:#363636;
+    text-decoration:none;
+`
 
 const Container = styled.div`
     display:flex;
@@ -24,7 +32,7 @@ const Container = styled.div`
 const Img = styled.img`
     width: 115px;
     height: 67px;
-    margin: 40px 100px;
+    margin: 40px 70px;
 `
 const Category = styled.div`
   display: flex;
@@ -34,7 +42,7 @@ const Category = styled.div`
   height: 2530px;
   p {
     color: #a7a7a7;
-    font-family: Pretendard;
+    font-family: 'Pretendard';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
