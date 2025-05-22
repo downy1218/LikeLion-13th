@@ -10,7 +10,7 @@ function Header(){
             <Category>
                 <Page to='/'>About</Page>
                 <Page to='/project'>Project</Page>
-                <Page to='diary'>Diary</Page>
+                <Page to='/diary'>Diary</Page>
                 <Page>QnA</Page>
             </Category>
             

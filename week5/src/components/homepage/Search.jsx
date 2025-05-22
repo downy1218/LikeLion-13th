@@ -14,7 +14,7 @@ export default function Search(){
     )
 }
     const Input = styled.input`
-        width: 220px;
+        width: 420px;
         height: 35px;
         border-radius: 100px;
         background: #1C1C1C;
