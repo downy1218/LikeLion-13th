@@ -106,6 +106,7 @@ const HighlightText = styled.p`
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
+  margin:0;
 `;
 
 const Image = styled.img`
