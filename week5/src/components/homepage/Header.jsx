@@ -32,7 +32,7 @@ const Container = styled.div`
 const Img = styled.img`
     width: 115px;
     height: 67px;
-    margin: 40px 100px;
+    margin: 40px 70px;
 `
 const Category = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ const Category = styled.div`
   height: 2530px;
   p {
     color: #a7a7a7;
-    font-family: Pretendard;
+    font-family: 'Pretendard';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;

@@ -2,8 +2,6 @@ import styled from "styled-components"
 import SearchIcon from '../../assets/images/search.svg';
 
 export default function Search(){
-
-
     return(
         <Container>
             <Input 
@@ -25,6 +23,8 @@ export default function Search(){
         padding-left:40px;
     `
     const Container = styled.div`
+        margin-left:250px;
+        margin-top:50px;
         display:flex;
         align-items:center;
         position:absolute;
