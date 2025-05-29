@@ -8,7 +8,7 @@ export default function ProductCard({ brand, name, price, salePrice, image }) {
       <BrandName>{brand}</BrandName>
       <ProductName>{name}</ProductName>
       <Price>
-        <ProductPrice>{price.toLocaleString()}</ProductPrice>
+        <ProductPrice>{price}</ProductPrice>
         <SalePrice>{salePrice}</SalePrice>
       </Price>
       <Notice>
@@ -24,7 +24,7 @@ const Card = styled.div`
   height:347px;
   margin-bottom:80px;
   -webkit-user-drag:none;
-
+  cursor: pointer;
 `;
 
 const BrandName = styled.p`
