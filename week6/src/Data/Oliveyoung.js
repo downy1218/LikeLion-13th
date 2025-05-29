@@ -1,6 +1,6 @@
 import Colorgram1 from '../assets/Images/colorGram1.jpg';
 import Colorgram2 from '../assets/Images/colorGram2.jpg';
-import Heartprecent from '../assets/Images/heartPrecent.jpg';
+import Heartprecent from '../assets/Images/heartPercent.jpg';
 import CE from '../assets/Images/3ce.jpg';
 import Aou from '../assets/Images/aou.jpg';
 import Bbia from '../assets/Images/bbia.jpg';
