@@ -22,9 +22,9 @@ export default function ProductCard({ brand, name, price, salePrice, image }) {
 const Card = styled.div`
   width: 240px;
   height:347px;
-  margin-bottom:40px;
+  margin-bottom:80px;
   -webkit-user-drag:none;
-  padding:20px;
+
 `;
 
 const BrandName = styled.p`
@@ -33,7 +33,7 @@ const BrandName = styled.p`
   color:gray;
   font-size:17px;
   font-weight:700;
- 
+  margin:0;
 `
 const Price = styled.div`
   display:flex;
@@ -42,7 +42,7 @@ const Price = styled.div`
   gap:10px;
   width:240px;
   height:25px;
-  margin-top:10px;
+  margin-top:30px;
 `
 
 const ProductPrice = styled.p`
@@ -60,7 +60,7 @@ const SalePrice = styled.div`
   margin:0;
 `;
 const ProductImage = styled.img`
-  width: 100%;
+  width: 240px;
   height:240px;
   object-fit:contain;
 `;
@@ -70,7 +70,7 @@ const ProductName = styled.h3`
   margin: 10px 0 5px;
   height:40px;
   margin-bottom:0;
-  
+  text-align:center;
 `;
 
 const Notice = styled.div`

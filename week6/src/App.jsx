@@ -53,10 +53,10 @@ const ResultText = styled.h2`
 `;
 const ProductList = styled.div`
   display: grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:30px;
+  grid-template-columns:repeat(4,240px);
+  gap:10px;
   flex-wrap: wrap;
-  margin-left: 100px;
+  margin-left: 200px;
 `;
 
 const Container = styled.div`
