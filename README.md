@@ -7,3 +7,4 @@
 | 2025.05.06 | styled-components | week3-todoList |
 | 2025.05.16 | Layout, Router | week4 |
 | 2025.05.23 | Figma 화면 보고 UI 제작해보기 | week5 |
+| 2025.05.30 | 더미데이터 활용하여 UI 제작 | week6 |
