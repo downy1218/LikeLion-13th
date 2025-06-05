@@ -1,8 +1,6 @@
 import { Outlet } from "react-router";
-import Header from "./Header";
-import Footer from "./Footer";
 import styled from "styled-components";
-
+import Header from "./Components/Header";
 function Layout(){
     return(
         <>
@@ -10,9 +8,6 @@ function Layout(){
             <Content>
                 <Outlet/>
             </Content>
-            <footer>
-                <Footer/>
-            </footer>
         </>
     )
 }
