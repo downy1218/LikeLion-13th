@@ -1,14 +1,46 @@
 import { Tint } from "./Data/Oliveyoung";
 import ProductCard from "./Components/ProductCard";
 import styled from "styled-components";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import { itemApi } from "../api/itemApi";
+
 
 export default function App() {
   const [isClicked,setIsClicked] = useState(false); //카테고리 클릭
   const [isOpen,setIsOpen] = useState(false); //토글 오픈
   const [activeCategory, setActiveCategory] = useState('인기순');
   const categories = ['인기순', '판매순', '신상품순', '할인율순'];
+  const [isLoading,setIsLoading] = useState(false); //아이템 정보 로딩상태
+  const [error,setError] = useState(null); //로딩 에러 상태
 
+
+  useEffect(()=>{
+    fetchAllItems();
+  },[])
+
+  const fetchAllItems = async()=>{
+    setIsLoading(true);
+    const result = await itemApi.getAllItems('shoes');
+    console.log(result.data);
+    if(result?.data){
+      console.log('아이템 정보 받아오기 성공')
+    }else{
+      console.log('아이템 정보 받아오기 실패')
+    }
+    setIsLoading(false);
+  }
+
+  if(isLoading){
+    return(
+      <div style={{color:'black'}}>로딩 중...</div>
+    )
+  }
+
+  if(error){
+    return(
+      <div style={{color:'red'}}>아이템을 불러오지 못했습니다 ㅜㅜ</div>
+    )
+  }
 
   return (
     <Wrapper>
