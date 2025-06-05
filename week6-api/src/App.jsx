@@ -1,11 +1,9 @@
 import { Tint } from "./Data/Oliveyoung";
 import ProductCard from "./Components/ProductCard";
 import styled from "styled-components";
-import {useNavigate} from 'react-router-dom';
 import { useState } from "react";
 
 export default function App() {
-  const navigate = useNavigate();
   const [isClicked,setIsClicked] = useState(false); //카테고리 클릭
   const [isOpen,setIsOpen] = useState(false); //토글 오픈
   const [activeCategory, setActiveCategory] = useState('인기순');
@@ -14,8 +12,6 @@ export default function App() {
 
   return (
     <Wrapper>
-      <Title onClick={() => navigate("/")}>OLIVE YOUNG</Title>
-      <div style={{ height: "2px", width: "100%", background: "black" }} />
       <ResultText>'틴트'에 대한 검색 결과</ResultText>
       <Container>
         <p>총 8개</p>
@@ -61,20 +57,12 @@ const Wrapper = styled.div`
   padding: 24px;
 `;
 
-const Title = styled.p`
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  margin-left: 100px;
-  font-style: italic;
-  cursor: pointer;
-`;
 const ResultText = styled.h2`
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 20px;
   margin-top:40px;
-  margin-left: 100px;
+  margin-left: 170px;
 `;
 const ProductList = styled.div`
   display: grid;
